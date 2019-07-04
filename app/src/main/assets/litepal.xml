@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="keke_weather"/>
+    <version value="1"/>
+    <list>
+        <mapping class="com.keke.kekeweather.db.Province"/>
+        <mapping class="com.keke.kekeweather.db.City"/>
+        <mapping class="com.keke.kekeweather.db.County"/>
+    </list>
+</litepal>

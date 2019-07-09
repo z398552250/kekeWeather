@@ -1,6 +1,7 @@
 package com.keke.kekeweather;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -79,6 +80,12 @@ public class ChooseAreaFragment extends Fragment {
                 }else if(currentLevel==LEVEL_CITY){
                     selectCity=cityList.get(position);
                     queryCounties();
+                }else if (currentLevel==LEVEL_COUNTY){
+                    String weatherid=countyList.get(position).getWeatherId();
+                    Intent intent=new Intent(getActivity(),WeatherActivity.class);
+                    intent.putExtra("weather_id",weatherid);
+                    startActivity(intent);
+                    getActivity().finish();
                 }
             }
 

@@ -2,6 +2,18 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
+
+
+//    signingConfigs{
+//        config{
+//            storeFile file('E:/AndroidStudio-WorkSpaces/limeng.jks')
+//            storePassword '123456'
+//            keyAlias 'limeng'
+//            keyPassword '123456'
+//        }
+//    }
+
+
     defaultConfig {
         applicationId "com.keke.kekeweather"
         minSdkVersion 19
